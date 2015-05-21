@@ -29,7 +29,8 @@ function drawO(rowNum, colNum) {
 
 	// Draw the circle
 	canvas.beginPath();
-	canvas.arc(100*colNum + 50, 100*rowNum + 50, 40, 0, 2*Math.PI, false); // arc(centerX, centerY, radius, startAngle, endAngle, ccw?)
+	canvas.arc(100*colNum + 50, 100*rowNum + 50, 40, 0, 2*Math.PI, false); 
+	// syntax helper: arc(centerX, centerY, radius, startAngle, endAngle, ccw?)
 	canvas.stroke();
 }
 
@@ -267,5 +268,5 @@ $(document).ready(function() {
 	$("#question").click(function () {
 		var response = prompt("What's your favorite color?");
 		$("#favoriteColor").text(response);
-	})
+	});
 });
