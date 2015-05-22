@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="battleship.css">
+</head>
+<body>
+  <p>Welcome to Battleship!</p>
+  <br>
+
+  <p>Enemy board</p>
+  <table id="enemyBoard"></table>
+  <br>
+
+  <hr />
+
+  <br>
+  <p>Player board</p>
+  <table id="playerBoard"></table>
+
+  <script type="text/javascript" src="cells.js"></script>
+  <script type="text/javascript" src="ship.js"></script>
+  <script type="text/javascript" src="board.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+
+  <script type="text/javascript">
+    var battleship = new Game();
+    battleship.initBoards();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<title>MayTerm 2k15 Game</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="memoryGame.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="pageHeader">
+				<h1 id="welcome">Welcome to the Memory Game!</h1>
+				
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-4">
+					<p class="instruc">Instructions</p>
+					<ol>	
+						<li>Click on the squares to reveal letters</li>
+						<li>Match the same letters together as fast as you can</li>
+						<li>Choose level of difficulty(beginner, intermediate, advanced)</li>
+						<li>Click on the buttons to the right to begin or to start a new board.</li>
+					</ol>
+				</div>
+
+				<div class="col-sm-4">
+					<canvas id = "myCanvas" width="300" height="300"></canvas>
+				</div>
+
+				<div class="col-sm-4">
+					<button type = "button" onclick="drawEasyBoard()">Beginner</button>
+					<button type = "button" onclick="drawMediumBoard()">Intermediate</button>
+					<button type = "button" onclick="drawDifficultBoard()">Advanced</button>
+					
+				</div>
+
+			</div>
+			
+		
+		</div>
+	</body>
+</html>

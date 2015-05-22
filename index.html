@@ -7,59 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="halting-game.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="halting-game.js"></script>
     
 </head>
   
 <body>
 <div class="container">
     <div class="page-header">
-        <h2>Tic-Tac-Toe</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>The Halting Games</h2>
+            </div>
+            <div class="col-sm-8">
+                <small style="margin-top:20px; display:block;">As a final project in the Halting Game May Term we wrote some games
+                that halt. The last two days of class were a giant HTML/Javascript
+                hackathon and we produced some awesome games. Check them out!</small>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm-4">
-            <h4>Phase 1</h4>
-            <p>Make graphics methods and test them using the developer tools.
-            For this project, I wrote methods to draw an X, draw an O, and
-            clear a square, then tested them out.</p>
-            <h4>Phase 2</h4>
-            <p>Decide how you're going to represent your game. You need some
-            variables so that the computer can keep track of what happens behind
-            the scenes. For this, I decided I would keep an array of 9 items
-            (all of which are "b" for blank, "x" for X, and "o" for O) to represent
-            the board. (Check out the "currentPosition" variable in the Javascript.)</p>
-            <h4>Phase 3</h4>
-            <p>Write some functions to deal with the game for you. For this, I needed
-            to write a function to see if it was legal to put a mark in a square,
-            to actually put the mark in the square, to figure out whose turn
-            it was, and to check if someone had won.</p>
-            <h4>Phase 4</h4>
-            <p>Wire up the game logic and the display. Usually for this you'll need
-            to write some mouse click handlers or maybe use the prompt() function.
-            If you're here, talk to me!</p>
-            <br>
+            <a href="memory/index.html"><img src="mem.png" alt="the memory game" height="300" width="300"></a>
+            <a href="sudoku/index.html"><img src="sudoku.png" alt="sudoku" height="300" width="300"></a>
         </div>
         <div class="col-sm-4">
-            <canvas id="middleCanvas" width="300" height="300">
-                This is a canvas and your browser can't display it. Try me again
-                in Chrome or Firefox!!
-            </canvas>
+            <a href="pong/index.html"><img src="pong.png" alt="pong" height="300" width="300"></a>
+            <a href="ttt/index.html"><img src="ttt.png" alt="tic-tac-toe" height="300" width="300"></a>
+            
         </div>
         <div class="col-sm-4">
-            <p>A message about who won should appear here:</p>
-            <p id="winningMessage"></p>
-            <hr>
-            <p>This isn't related to tic-tac-toe, but it's an example of how
-                you could get input from someone using your website. Click on
-                the paragraph below to set your favorite color!</p>
-            <p id="question">Your favorite color is: <span id="favoriteColor"></span></p>
+            <a href="http://vgdorsey.github.io/MT-2015-TCS/"><img src="et3.png" alt="mega tic-tac-toe" height="300" width="300"></a>
         </div>
     </div>
-
 </div>
 </body>
 </html>
